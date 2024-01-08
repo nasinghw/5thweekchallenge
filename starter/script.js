@@ -95,24 +95,23 @@ var lowercase = []
 upperCasedCharacters.forEach((tacocat, index) => {
 
 })
-String
+// String
+// // Function to prompt user for password options
+// function getPasswordOptions() {
+
+// }
+
+// // Function for getting a random element from an array
+// function getRandom(arr) {
+
+// }
+
+// // Function to generate password with user input
+// function generatePassword() {
+
+// }
+
 // Function to prompt user for password options
-function getPasswordOptions() {
-
-}
-
-// Function for getting a random element from an array
-function getRandom(arr) {
-
-}
-
-// Function to generate password with user input
-function generatePassword() {
-
-}
-
-
-
 function getPasswordOptions() {
   let length = 0;
   while (length < 8 || length > 128) {
@@ -120,6 +119,7 @@ function getPasswordOptions() {
   }
 
   const includeLowercase = confirm("Include lowercase characters?");
+
   const includeUppercase = confirm("Include uppercase characters?");
   const includeNumeric = confirm("Include numeric characters?");
   const includeSpecial = confirm("Include special characters? ($@%&*, etc)");
@@ -135,10 +135,12 @@ function getPasswordOptions() {
   return passwordOptions;
 }
 
+// Function for getting a random element from an array
 function getRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+// Function to generate password with user input
 function generatePassword() {
   const options = getPasswordOptions();
 
