@@ -144,5 +144,61 @@ function generatePassword() {
 // const generateButton = document.getElementById('generate');
 // generateButton.addEventListener('click', updatePassword);
 
+function getPasswordOptions() {
+  let length = 0;
+  while (length < 8 || length > 128) {
+    length = parseInt(prompt("Enter the length of the password (between 8 and 128 characters):"));
+  }
+
+  const includeLowercase = confirm("Include lowercase characters?");
+  const includeUppercase = confirm("Include uppercase characters?");
+  const includeNumeric = confirm("Include numeric characters?");
+  const includeSpecial = confirm("Include special characters? ($@%&*, etc)");
+
+  const passwordOptions = {
+    length,
+    includeLowercase,
+    includeUppercase,
+    includeNumeric,
+    includeSpecial,
+  };
+
+  return passwordOptions;
+}
+
+function getRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function generatePassword() {
+  const options = getPasswordOptions();
+
+  const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
+  const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const numericChars = '0123456789';
+  const specialChars = '$@%&*';
+
+  let availableChars = '';
+  let generatedPassword = '';
+
+  if (options.includeLowercase) availableChars += lowercaseChars;
+  if (options.includeUppercase) availableChars += uppercaseChars;
+  if (options.includeNumeric) availableChars += numericChars;
+  if (options.includeSpecial) availableChars += specialChars;
+
+  if (availableChars.length === 0) {
+    alert("At least one character type should be selected!");
+    return;
+  }
+
+  for (let i = 0; i < options.length; i++) {
+    const randomChar = getRandom(availableChars);
+    generatedPassword += randomChar;
+  }
+
+  document.getElementById('password').value = generatedPassword;
+}
+
+document.getElementById('generate').addEventListener('click', generatePassword);
 
 
