@@ -87,7 +87,14 @@ var upperCasedCharacters = [
   'Y',
   'Z'
 ];
+var lowercase = upperCasedCharacters.map((tacocat) => {return tacocat.toLowerCase()})
 
+var lowercase = []
+
+upperCasedCharacters.forEach((tacocat, index) => {
+
+})
+String
 // Function to prompt user for password options
 function getPasswordOptions() {
 
@@ -161,5 +168,21 @@ function generatePassword() {
 }
 
 document.getElementById('generate').addEventListener('click', generatePassword);
+document.getElementById('generate').addEventListener('click', generatePassword);
 
+
+for (let i = 0; i < array.length; index++) {
+  const element = array[index];
+  
+}
+
+if (condition) {
+  
+} else {
+  
+}
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+  
+}
 
