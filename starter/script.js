@@ -88,6 +88,7 @@ var upperCasedCharacters = [
   'Z'
 ];
 var lowercase = upperCasedCharacters.map((tacocat) => {return tacocat.toLowerCase()})
+console.log("🚀 ~ file: script.js:91 ~ lowercase:", lowercase)
 
 var lowercase = []
 
