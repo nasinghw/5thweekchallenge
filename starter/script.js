@@ -103,8 +103,8 @@ function generatePassword() {
 
 }
 
-// Get references to the #generate element
-var generateBtn = document.querySelector('#generate');
+// // Get references to the #generate element
+// var generateButn = document.querySelector('#generate');
 
 // // Write password to the #password input
 // function writePassword() {
@@ -115,7 +115,7 @@ var generateBtn = document.querySelector('#generate');
 // }
 
 // // Add event listener to generate button
-// generateBtn.addEventListener('click', writePassword);
+// generateButn.addEventListener('click', writePassword);
 
 // // script.js
 
@@ -143,4 +143,6 @@ var generateBtn = document.querySelector('#generate');
 // // Event listener for the Generate Password button
 // const generateButton = document.getElementById('generate');
 // generateButton.addEventListener('click', updatePassword);
+
+
 
