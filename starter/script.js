@@ -106,13 +106,41 @@ function generatePassword() {
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector('#password');
+// // Write password to the #password input
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector('#password');
 
-  passwordText.value = password;
-}
+//   passwordText.value = password;
+// }
 
-// Add event listener to generate button
-generateBtn.addEventListener('click', writePassword);
+// // Add event listener to generate button
+// generateBtn.addEventListener('click', writePassword);
+
+// // script.js
+
+// // Function to generate a random password
+// function generatePassword(length) {
+//   const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+';
+//   let password = '';
+  
+//   for (let i = 0; i < length; i++) {
+//     const randomIndex = Math.floor(Math.random() * charset.length);
+//     password += charset[randomIndex];
+//   }
+  
+//   return password;
+// }
+
+// // Function to update the textarea with the generated password
+// function updatePassword() {
+//   const passwordTextArea = document.getElementById('password');
+//   const generatedPassword = generatePassword(12); // Change the length as needed
+  
+//   passwordTextArea.value = generatedPassword;
+// }
+
+// // Event listener for the Generate Password button
+// const generateButton = document.getElementById('generate');
+// generateButton.addEventListener('click', updatePassword);
+
