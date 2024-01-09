@@ -99,11 +99,13 @@ upperCasedCharacters.forEach((tacocat, index) => {
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+
+  //Force user to accept the condition of choosing required character length
   let length = 0;
   while (length < 8 || length > 128) {
     length = parseInt(prompt("Enter the length of the password (between 8 and 128 characters):"));
   }
-
+//Input from prompt as Yes or No
   const includeLowercase = confirm("Include lowercase characters?");
 
   const includeUppercase = confirm("Include uppercase characters?");
@@ -117,7 +119,7 @@ function getPasswordOptions() {
     includeNumeric,
     includeSpecial,
   };
-
+//Return array of choosen password options 
   return passwordOptions;
 }
 
@@ -133,7 +135,7 @@ function generatePassword() {
   const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
   const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const numericChars = '0123456789';
-  const specialChars = '$@%&*';
+  const specialChars = '!$@%&*';
 
   let availableChars = '';
   let generatedPassword = '';
