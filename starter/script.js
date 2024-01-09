@@ -171,21 +171,20 @@ function generatePassword() {
 }
 
 document.getElementById('generate').addEventListener('click', generatePassword);
-document.getElementById('generate').addEventListener('click', generatePassword);
 
 
-for (let i = 0; i < array.length; index++) {
-  const element = array[index];
+// for (let i = 0; i < array.length; index++) {
+//   const element = array[index];
   
-}
+// }
 
-if (condition) {
+// if (condition) {
   
-} else {
+// } else {
   
-}
-for (let i = 0; i < array.length; i++) {
-  const element = array[i];
+// }
+// for (let i = 0; i < array.length; i++) {
+//   const element = array[i];
   
-}
+// }
 
