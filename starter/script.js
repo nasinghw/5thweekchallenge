@@ -95,21 +95,7 @@ var lowercase = []
 upperCasedCharacters.forEach((tacocat, index) => {
 
 })
-// String
-// // Function to prompt user for password options
-// function getPasswordOptions() {
 
-// }
-
-// // Function for getting a random element from an array
-// function getRandom(arr) {
-
-// }
-
-// // Function to generate password with user input
-// function generatePassword() {
-
-// }
 
 // Function to prompt user for password options
 function getPasswordOptions() {
